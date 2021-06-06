@@ -28,6 +28,40 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+    <style>
+    .hr-text {
+      line-height: 1em;
+      position: relative;
+      outline: 0;
+      border: 0;
+      color: black;
+      text-align: center;
+      height: 1.5em;
+      opacity: .5;
+      &:before {
+        content: '';
+        // use the linear-gradient for the fading effect
+        // use a solid background color for a solid bar
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+      }
+      &:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+
+        padding: 0 .5em;
+        line-height: 1.5em;
+        // this is really the only tricky part, you need to specify the background color of the container element...
+        color: #818078;
+        background-color: #fcfcfa;
+      }
+    </style>
   </head>
   <body>
 
@@ -111,14 +145,14 @@
                 <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Saya mengundang kalian semua untuk hadir di acara Aqiqahku</p>
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
-                    <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/raesha.akhtar/"><i class="icon-social-instagram"></i></a>
                   </li>
                   <li>
                     <a class="google" href="mailto:raesha.akhtar@gmail.com"><i class="icon-social-google"></i></a>
                   </li>
                 </ul>
                 <div class="header-button wow fadeInUp" data-wow-delay="1s">
-                  <a href="#" class="btn btn-common">Klik Untuk Detail</a>
+                  <a href="#undangan" class="btn btn-common">Klik Untuk Detail</a>
                 </div>
               </div>
             </div>
@@ -133,26 +167,29 @@
     <!-- Undangan Section Start -->
     <section id="undangan" class="section-padding">
       <div class="container">
+        <!-- <p style="padding-top: 100px">        </p> -->
         <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Undangan</h2>
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <p>Assalamu’alaikum Wr.Wb</p>
-              <p>Dengan memohon rahmat dan Ridho Allah SWT, kami sekeluarga bermaksud
+              <p style="font-size:24px;text-align:right">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+              <br>
+              <p style="font-size:18px">Dengan memohon rahmat dan Ridho Allah SWT, kami sekeluarga bermaksud
                 Mengundang Bapak/Ibu/Sdr/i  untuk berkenan hadir dalam acara
                 Tasyakuran Aqiqah putra kami, Yang Insya Allah akan dilaksanakan  pada :
               </p>
               <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Hari, Tanggal </span> <span class="pro-detail">Selasa, 8 juni 2021</span></li>
+                <ul class="admin-profile" style="font-size:18px">
+                  <li><span class="pro-title"> Tanggal </span> <span class="pro-detail">Selasa, 8 juni 2021</span></li>
                   <li><span class="pro-title"> Pukul </span> <span class="pro-detail">15.00 WIB (ba’da ashar)</span></li>
-                  <li><span class="pro-title"> Alamat </span> <span class="pro-detail">Kediaman Bp. Suhartono ,S.Pd (link here)</span></li>
+                  <li><span class="pro-title"> Alamat </span> <span class="pro-detail">Kediaman Bp. Suhartono ,S.Pd <a href="https://www.google.co.id/maps/place/Kedai+es+pelangi(creat+by+sumber)/@-8.3467389,113.6043,17z/data=!4m5!3m4!1s0x2dd69b06d83f9b79:0x4d2126e5e7ff9a99!8m2!3d-8.346743!4d113.6064883">(link)</a></span></li>
                 </ul>
               </div>
-              <p>Merupakan suatu kehormatan bagi kami sekeluarga apabila Bapak/Ibu/Sdr/I berkenan
+              <p style="font-size:18px">Merupakan suatu kehormatan bagi kami sekeluarga apabila Bapak/Ibu/Sdr/I berkenan
                 hadir untuk bersama-sama dalam acara tersebut.
               </p>
-              <p style="text-align:center">Atas kehadirannya dan doanya kami ucapkan terimah kasih</p>
+              <br>
+              <p style="text-align:center; font-size:20px">Atas kehadirannya dan doanya kami ucapkan terimah kasih</p>
             </div>
           </div>
         </div>
@@ -160,158 +197,33 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Services Section Start -->
-    <!-- <section id="services" class="services section-padding"> -->
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
-      <div class="container">
-        <div class="row">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="icon-grid"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Front-end Development</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Graphic Design</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="icon-briefcase"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Business Branding</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="icon-bubbles"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Resume Section Start -->
-    <!-- <div id="resume" class="section-padding"> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="education wow fadeInRight" data-wow-delay="0.3s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-graduation"></i>
-                  <h2 class="timelin-title">Education</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Bsc In CSE - Yale University</h3>
-                    <span>2012 - 2016</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Higher Secondary School - San Francisco College</h3>
-                    <span>2010 - 2012</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Secondary School - Labratory High School</h3>
-                    <span>2005 - 2010</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-briefcase"></i>
-                  <h2 class="timelin-title">Experience</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Art Director - Tesla Inc.</h3>
-                    <span>Jan 2018 - Present</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">UX/UI Designer - Samsung</h3>
-                    <span>Nov 2016 - Dec 2017</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Intern UI Designer - UIdeck</h3>
-                    <span>Mar 2015 - Oct 2016</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Resume Section End -->
-
-
     <!-- About Section Start -->
     <section id="about" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
+              <img class="img-fluid" src="assets/img/about/img3.jpg" alt="">
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 0px;">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s" style="padding-top: 0px;">
               <h3>Hi Guys!</h3>
-              <p>Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
+              <p>Anda kenal saya? Pernah bertemu dengan saya? Pasti kebanyakan menjawab tidak. Yailah. Saya baru lahir. Hehehe. :D </p>
+              <p>Pernah baca kata-kata ini:
+        "Tak kenal maka tak sayang. Tak sayang maka tak cinta."
+        Saya pernah membaca tulisan itu. Kalau dipikir-pikir benar juga. Setuju saya dengan kalimat diatas. Ketika kita tidak saling kenal, mana bisa kita menyayangi. Ketika kita saling kenal baru bisa memunculkan rasa sayang. Ketika rasa sayang itu muncul barulah kita bisa mencintai. Jadi, seperti itulah tahapannya. (Tapi jangan terlalu percaya kata-kata saya) Hehehe</p>
+        <p>Bagaimana kita bisa menyayangi dan mencintai? Gampang saja itu. Untuk menyayangi dan mencintai, <b>kita harus tahu lebih dekat.</b></p>
               <div class="about-profile">
                 <ul class="admin-profile">
                   <li><span class="pro-title"> Nama </span> <span class="pro-detail">Raesha Akhtar Alfarezi</span></li>
-                  <li><span class="pro-title"> Lahir </span> <span class="pro-detail">2 Juni 2021</span></li>
+                  <li><span class="pro-title"> Lahir </span> <span class="pro-detail">Rabu, 2 Juni 2021</span></li>
                   <li><span class="pro-title"> Panjang </span> <span class="pro-detail">51 Cm</span></li>
                   <li><span class="pro-title"> Berat </span> <span class="pro-detail">3,3 Kg</span></li>
                   <li><span class="pro-title"> Anak </span> <span class="pro-detail">Kedua</span></li>
-                  <hr>
-                  <li><span class="pro-title"> Ayah </span> <span class="pro-detail">Septian Eko NUrcahyanto</span></li>
+                  <li><span class="pro-title"> Hobi </span> <span class="pro-detail">Ngempeng Mania, Mantaps</span></li>
+                  <hr/>
+                  <li><span class="pro-title"> Ayah </span> <span class="pro-detail">Septian Eko Nurcahyanto</span></li>
                   <li><span class="pro-title"> Ibu </span> <span class="pro-detail">Nadia Vienurillah</span></li>
                   <li><span class="pro-title"> Kakak </span> <span class="pro-detail">Reyhan Albirruni Septian</span></li>
                 </ul>
@@ -353,10 +265,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-1.jpg" alt="" />
+                  <img src="assets/img/gallery/img7.jpg" alt="" height="240" />
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img7.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
@@ -370,10 +282,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-2.jpg" alt=""/>
+                  <img src="assets/img/gallery/img6.jpg" alt="" height="240"/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img6.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
@@ -387,10 +299,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-3.jpg" alt=""/>
+                  <img src="assets/img/gallery/img2.jpg" alt="" height="240"/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img2.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
@@ -404,10 +316,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-4.jpg" alt="" />
+                  <img src="assets/img/gallery/img4.jpg" alt="" height="240"/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img4.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
@@ -421,10 +333,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-5.jpg" alt="" />
+                  <img src="assets/img/gallery/img5.jpg" alt="" height="240"/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img5.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
@@ -438,10 +350,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-6.jpg" alt=""/>
+                  <img src="assets/img/gallery/img3.jpg" alt="" height="240"/>
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
+                      <a class="lightbox preview" href="assets/img/gallery/img3.jpg">
                         <i class="icon-eye"></i>
                       </a>
                       <a class="link" href="#">
